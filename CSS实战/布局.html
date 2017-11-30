@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>博雅互动</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+        }
+
+        div.header {
+            width: 100%;
+            clear: both;
+            background-color: #191d3a;
+            overflow: hidden;
+        }
+
+        .centerHor {
+            margin: 0 auto;
+        }
+
+        div.section {
+            width: 1000px;
+            clear: both;
+        }
+
+        div.logo {
+            float: left;
+            padding-top: 10px;
+            width: 255px;
+        }
+
+        div.nav {
+            width: 650px;
+            float: left;
+        }
+
+        div.nav > a {
+            float: left;
+            text-align: center;
+            width: 85px;
+            height: 58px;
+            color: #818496;
+            line-height: 58px;
+            border-left: 1px solid #252947;
+            border-right: 1px solid #252947;
+            margin-right: -1px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        div.nav > a:hover {
+
+            color: #e2e4ed;
+        }
+
+        div.nav > a.current {
+            background-color: #252947;
+            color: #e2e4ed;
+        }
+
+        div.nav a.join {
+            background-color: #38b774;
+            color: white;
+            border-radius: 3px;
+            height: 32px;
+            width: 98px;
+            line-height: 32px;
+            margin-top: 13px;
+            margin-left: 10px;
+        }
+
+        div.nav a.join:hover {
+            background-color: #3aca7a;
+        }
+
+        div.section div.changeLang div > a {
+            float: right;
+            color: #818496;
+            line-height: 58px;
+            display: inline-block;
+
+        }
+
+        div.section div.changeLang a.china {
+            color: #38b774;
+        }
+
+        div.content div.banner {
+            width: 100%;
+            height: 254px;
+            background-color: pink;
+            background-image: url("http://www.boyaa.com/pic/newsbanner.jpg");
+        }
+
+        div.content div.location {
+            width: 1000px;
+            margin: 0 auto;
+            padding: 25px 0 10px 0;
+            overflow: hidden;
+            border-bottom: 1px solid #c7d6e5;
+        }
+
+        div.content div.title > h2 {
+            float: left;
+            height: 29px;
+            line-height: 29px;
+            text-align: center;
+            font-size: 20px;
+
+            /*background-image: url("../images/location.png");*/
+        }
+
+        div.content div.rightT {
+            float: right;
+        }
+
+        div.content div.rightT > a {
+            color: #444866;
+            font-size: 12px;
+        }
+
+        div.content div.new_total {
+            width: 1000px;
+            /*height: 100px;*/
+            /*background-color: lightskyblue;*/
+            margin: 0 auto;
+            padding: 20px 10px;
+            overflow: hidden;
+        }
+
+        div.content div.new_total div.n_left {
+            float: left;
+            width: 730px;
+            /*background-color: lightskyblue;*/
+
+        }
+
+        div.content div.new_total div.n_left h2 label {
+            float: left;
+            color: lightgreen;
+            font-size: 16px;
+        }
+
+        div.content div.new_total div.n_left h2 a {
+            color: black;
+            margin-left: 10px;
+        }
+
+        div.content div.new_total div.n_left h2 span {
+            float: right;
+            color: #cccccc;
+        }
+
+        div.content div.new_total div.n_left div.img {
+            width: 650px;
+            margin: 15px auto;
+        }
+
+        div.content div.new_total div.n_left div.img img {
+            width: 650px;
+        }
+
+        div.content div.new_total div.n_left div.des .s1 {
+            text-indent: 2em;
+            color: #444866;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #c7d6e5;
+        }
+
+        div.content div.new_total div.n_left div.des .s2 a {
+            color: green;
+        }
+
+        div.content div.new_total div.n_left ul {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        div.content div.new_total div.n_left ul li {
+            line-height: 40px;
+        }
+
+        div.content div.new_total div.n_left ul li>a {
+            color: #444866;
+            float: left;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        div.content div.new_total div.n_left ul li > span {
+            float: right;
+            color: #cccccc;
+            font-size: 12px;
+
+        }
+
+        div.content div.new_total div.n_right{
+            float: right;
+            width: 250px;
+            height: 214px;
+            border-left: 1px solid #c7d6e5;
+
+        }
+        div.content div.new_total div.n_right div.topic{
+            margin: 0 auto;
+            /*background-color: red;*/
+        }
+        div.content div.new_total div.n_right div.topic h2{
+            text-align: center;
+
+        }
+        div.content div.new_total div.n_right div.topic h2>a{
+            color: black;
+        }
+        div.content div.new_total div.n_right div.pic {
+            width: 230px;
+            margin: 10px auto;
+        }
+        div.footer{
+            width: 100%;
+            height: 100px;
+            background-color: #6c6e7e;
+
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="section centerHor">
+        <div class="logo">
+            <img src="../images/logo.png" alt="">
+        </div>
+        <div class="nav centerHor">
+            <a class="current" href="#">首页</a>
+            <a href="#">博雅游戏</a>
+            <a href="#">博雅新闻</a>
+            <a href="#">关于我们</a>
+            <a href="#">客服中心</a>
+            <a href="#">投资者关系</a>
+            <a class="join" href="#">加入我们</a>
+        </div>
+
+        <div class="changeLang">
+            <div>
+                <a href="#">&nbsp;EN</a>
+            </div>
+            <div>
+                <a href="#" class="china">中文</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="content">
+    <div class="banner"></div>
+    <div class="location">
+        <div class="title">
+            <h2>博雅新闻</h2>
+        </div>
+        <div class="rightT">
+            <img src="../images/home.png" alt="xx">
+            <a href="#">博雅新闻</a>
+        </div>
+    </div>
+    <div class="new_total">
+        <div class="n_left">
+            <h2>
+                <label>[NEW]:</label>
+                <a href="#">2017博雅互动云南高校象棋争霸赛即将开赛</a>
+                <span>2017/11/16</span>
+            </h2>
+            <div class="img">
+                <img src="http://www.boyaa.com/pic/newspic/62/001.jpg" alt="xx" title="象棋争霸">
+            </div>
+
+            <div class="des">
+                <p class="s1">
+                    雅互动主办的第一届“博雅杯云南高校象棋争霸赛”将于11月18日在云南昆明正式拉开帷幕。比赛将在昆明的八所高校之间进行，经历一系列优中选优的校园赛后，12月17日-18日将迎来八大校园战队的巅峰对决，共同竞逐博雅杯云南高校棋王战队的荣耀。
+                    <span class="s2"><a
+                            href="#">[更多详情]</a></span>
+                </p>
+
+            </div>
+
+            <ul>
+                <li><a href="#"> 博雅互动公布2017年第三季度业绩，打造亚洲具影响力赛事品牌 收益持续稳步上升</a> <span>2017 / 11 / 23</span></li>
+                <li><a href="#"> 博雅互动公布2017年第三季度业绩，打造亚洲具影响力赛事品牌 收益持续稳步上升</a> <span>2017 / 11 / 23</span></li>
+                <li><a href="#"> 博雅互动公布2017年第三季度业绩，打造亚洲具影响力赛事品牌 收益持续稳步上升</a> <span>2017 / 11 / 23</span></li>
+                <li><a href="#"> 博雅互动公布2017年第三季度业绩，打造亚洲具影响力赛事品牌 收益持续稳步上升</a> <span>2017 / 11 / 23</span></li>
+                <li><a href="#"> 博雅互动公布2017年第三季度业绩，打造亚洲具影响力赛事品牌 收益持续稳步上升</a> <span>2017 / 11 / 23</span></li>
+                <li><a href="#"> 博雅互动公布2017年第三季度业绩，打造亚洲具影响力赛事品牌 收益持续稳步上升</a> <span>2017 / 11 / 23</span></li>
+                <li><a href="#"> 博雅互动公布2017年第三季度业绩，打造亚洲具影响力赛事品牌 收益持续稳步上升</a> <span>2017 / 11 / 23</span></li>
+                <li><a href="#"> 博雅互动公布2017年第三季度业绩，打造亚洲具影响力赛事品牌 收益持续稳步上升</a> <span>2017 / 11 / 23</span></li>
+                <li><a href="#"> 博雅互动公布2017年第三季度业绩，打造亚洲具影响力赛事品牌 收益持续稳步上升</a> <span>2017 / 11 / 23</span></li>
+                <li><a href="#"> 博雅互动公布2017年第三季度业绩，打造亚洲具影响力赛事品牌 收益持续稳步上升</a> <span>2017 / 11 / 23</span></li>
+                <li><a href="#"> 博雅互动公布2017年第三季度业绩，打造亚洲具影响力赛事品牌 收益持续稳步上升</a> <span>2017 / 11 / 23</span></li>
+                <li><a href="#"> 博雅互动公布2017年第三季度业绩，打造亚洲具影响力赛事品牌 收益持续稳步上升</a> <span>2017 / 11 / 23</span></li>
+                <li><a href="#"> 博雅互动公布2017年第三季度业绩，打造亚洲具影响力赛事品牌 收益持续稳步上升</a> <span>2017 / 11 / 23</span></li>
+                <li><a href="#"> 博雅互动公布2017年第三季度业绩，打造亚洲具影响力赛事品牌 收益持续稳步上升</a> <span>2017 / 11 / 23</span></li>
+                <li><a href="#"> 博雅互动公布2017年第三季度业绩，打造亚洲具影响力赛事品牌 收益持续稳步上升</a> <span>2017 / 11 / 23</span></li>
+
+            </ul>
+        </div>
+        <div class="n_right">
+            <div class="topic">
+                <h2><a href="#">博雅香港上市专题</a></h2>
+            </div>
+            <div class="pic">
+                <a href="#"><img src="../images/npic1.jpg" alt=""></a>
+            </div>
+            
+            
+        </div>
+    </div>
+
+
+</div>
+<div class="footer">
+
+</div>
+</body>
+</html>

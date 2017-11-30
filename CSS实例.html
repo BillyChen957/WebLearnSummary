@@ -1,15 +1,480 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <style type="text/css">
+<p lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS实例</title>
+        <style type="text/css">
 
-    </style>
-</head>
-<body>
-<p>
-    <div></div>
-</p>
+            /*position*/
+            .centerX {
+                position: absolute;
+                left: 50%;
+                width: 150px;
+                background-color: #eeeeee;
+                text-align: center;
+                line-height: 40px;
+            }
+
+            /*z-index*/
+            .z1, .z2, .z3 {
+                position: absolute;
+                width: 150px;
+                height: 60px;
+                padding: 5px 10px;
+                color: white;
+                text-align: right;
+            }
+
+            .z1 {
+
+                top: 120px;
+                left: 120px;
+                background-color: red;
+                z-index: -1;
+            }
+
+            .z2 {
+
+                top: 150px;
+                left: 150px;
+                background-color: green;
+                z-index: 0;
+            }
+
+            .z3 {
+
+                top: 180px;
+                left: 180px;
+                background-color: blue;
+                z-index: 1;
+            }
+
+            /*display*/
+            .table {
+                position: absolute;
+                top: 270px;
+                line-height: normal;
+
+                display: table;
+                border-collapse: collapse;
+                border: 1px solid #cccccc;
+
+            }
+
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+
+            .table-caption {
+                display: table-caption;
+                font-size: 16px;
+                margin: 0;
+                padding: 0;
+            }
+
+            .table-column-group {
+                display: table-column-group;
+            }
+
+            .table-column {
+                display: table-column;
+                width: 100px;
+            }
+
+            .table-row-group {
+                display: table-row-group;
+            }
+
+            .table-row {
+                display: table-row;
+            }
+
+            .table-row-group .table-row:hover, .table-footer-group .table-row:hover {
+                background: #f6f6f6;
+            }
+
+            .table-cell {
+                display: table-cell;
+                padding: 0 5px;
+                border: 1px solid #ccc;
+            }
+
+            .table-header-group {
+                display: table-header-group;
+                background: #eee;
+                font-weight: bold;
+            }
+
+            .table-footer-group {
+                display: table-footer-group;
+                background: #eee;
+                font-weight: bold;
+            }
+
+            /*float*/
+            .float-right {
+                float: right;
+                padding: 5px 10px;
+            }
+
+            /*clear*/
+            .clear-right {
+                clear: left;
+            }
+
+            /*visibility*/
+            .visibility-hidden {
+                visibility: hidden;
+            }
+
+            .be_clip {
+                position: absolute;
+                top: 450px;
+                left: 10px;
+                width: 100px;
+                height: 50px;
+                line-height: 50px;
+                color: white;
+                background-color: red;
+                clip: rect(0 auto 35px 10px)
+                /*clip:rect(auto 10px auto 20px);*/
+            }
+
+            /*overflow*/
+            .overflow {
+                position: absolute;
+                top: 500px;
+                left: 10px;
+                width: 100px;
+                height: 50px;
+                overflow: auto;
+                background-color: #eeeeee;
+            }
+
+            .overflow-x {
+                position: absolute;
+                top: 570px;
+                left: 10px;
+                width: 200px;
+                height: 30px;
+                white-space: nowrap;
+                overflow-x: auto;
+            }
+
+            .overflow-y {
+                position: relative;
+                top: 10px;
+                left: 10px;
+                width: 200px;
+                height: 50px;
+                overflow-y: auto;
+
+            }
+
+            /*width min-width max-width*/
+            .width {
+                position: absolute;
+                top: 630px;
+                left: 10px;
+                width: 200px;
+                height: 30px;
+                background-color: #eeeeee;
+            }
+
+            .width-min {
+                position: absolute;
+                top: 660px;
+                left: 10px;
+                min-width: 200px;
+                height: 30px;
+                background-color: #eeeeee;
+            }
+
+            .width-max {
+                position: absolute;
+                top: 690px;
+                left: 10px;
+                max-width: 200px;
+                height: 30px;
+                background-color: #eeeeee;
+            }
+
+            /*height min-height max-height*/
+            .height {
+                position: absolute;
+                top: 720px;
+                left: 10px;
+                height: 30px;
+                background-color: #eeeeee;
+            }
+
+            .height-min {
+                position: absolute;
+                top: 750px;
+                left: 10px;
+                min-height: 30px;
+                background-color: #eeeeee;
+            }
+
+            .height-max {
+                position: absolute;
+                top: 780px;
+                left: 10px;
+                max-height: 30px;
+                background-color: #eeeeee;
+            }
+
+            /*margin margin-top margin-right margih-bottom margin-left*/
+            .mar {
+                width: 100px;
+                height: 100px;
+                background-color: lightcoral;
+            }
+
+            .margin {
+                position: absolute;
+                top: 810px;
+                margin: 10px;
+            }
+
+            .margin-top {
+                position: absolute;
+                top: 920px;
+                margin-top: 30px;
+                margin-right: 10px;
+                margin-bottom: 50px;
+                margin-left: 80px;
+            }
+
+            /*padding padding-top padding-right padding-bottom padding-left*/
+            .pad {
+                width: 200px;
+                height: 80px;
+                background-color: #eeeeee;
+                line-height: 80px;
+                text-align: center;
+                color: red;
+            }
+
+            .padding {
+                position: absolute;
+                top: 1030px;
+                padding: 10px 30px 50px 40px;
+            }
+
+            .paddign-top {
+                position: absolute;
+                top: 1200px;
+                padding-top: 20px;
+                padding-right: 20px;
+                padding-bottom: 20px;
+                padding-left: 20px;
+            }
+
+            /*border border-width border-style border-color*/
+            .border {
+                position: absolute;
+                top: 1350px;
+                margin: 10px;
+                width: 80%;
+                height: auto;
+                border: 5px solid green;
+            }
+
+            .border-width {
+                position: absolute;
+                top: 1400px;
+                margin: 10px;
+                width: 80%;
+                height: auto;
+                border-width: 1px 5px 10px 8px;
+                border-color: black red green blue;
+                border-style: solid;
+            }
+
+            /*box-shadow*/
+            ul.shadow {
+                position: absolute;
+                top: 1500px;
+            }
+
+            ul.shadow li {
+                margin-top: 20px;
+                list-style: none;
+                width: 400px;
+                padding: 10px;
+                background-color: #eeeeee;
+            }
+
+            li.outset {
+
+                -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.6);
+                box-shadow: 5px 5px rgba(0, 0, 0, 0.6);
+            }
+
+            li.outset-blur {
+                -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+                box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+            }
+
+            li.outset-extension {
+                -webkit-box-shadow: 5px 5px 5px 10px rgba(0, 0, 0, 0.6);
+                box-shadow: 5px 5px 5px 10px rgba(0, 0, 0, 0.6);
+            }
+
+            li.inset {
+                -webkit-box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.6);
+                box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.6);
+            }
+
+            li.multiple-shadow {
+                -webkit-box-shadow: 0 0 5px 3px rgba(255, 0, 0, .6), 0 0 5px 6px rgba(0, 182, 0, .6), 0 0 5px 10px rgba(255, 255, 0, .6);
+                box-shadow: 0 0 5px 3px rgba(255, 0, 0, .6), 0 0 5px 6px rgba(0, 182, 0, .6), 0 0 5px 10px rgba(255, 255, 0, .6);
+
+                margin-bottom: 50px;
+            }
+
+            /*box-reflect*/
+            .reflect{
+                position: absolute;
+                top:2000px;
+                width: 950px;
+                margin-bottom: 100px;
+                -webkit-box-reflect:below 0 -webkit-linear-gradient(transparent,transparent 50%,rgba(255,255,255,.3));
+                font:bold 100px/1.231 georgia,sans-serif;
+                text-transform: uppercase;
+            }
+        </style>
+    </head>
+
+<h2>定位position</h2>
+
+
+<div class="centerX">水平居中</div>
+
+
+<div class="z1">z1层</div>
+<div class="z2">z2层</div>
+<div class="z3">z3层</div>
+
+
+<h2>布局layout</h2>
+<!-- display-->
+<div class="table">
+    <h3 class="table-caption">花名册：</h3>
+    <div class="table-column-group">
+        <div class="table-column"></div>
+        <div class="table-column"></div>
+        <div class="table-column"></div>
+    </div>
+    <div class="table-header-group">
+        <ul class="table-row">
+            <li class="table-cell">序号</li>
+            <li class="table-cell">姓名</li>
+            <li class="table-cell">年龄</li>
+        </ul>
+    </div>
+    <div class="table-footer-group">
+        <ul class="table-row">
+            <li class="table-cell">footer</li>
+            <li class="table-cell">footer</li>
+            <li class="table-cell">footer</li>
+        </ul>
+    </div>
+    <div class="table-row-group">
+        <ul class="table-row">
+            <li class="table-cell">1</li>
+            <li class="table-cell">John</li>
+            <li class="table-cell">19</li>
+        </ul>
+        <ul class="table-row">
+            <li class="table-cell">2</li>
+            <li class="table-cell">Mark</li>
+            <li class="table-cell">21</li>
+        </ul>
+        <ul class="table-row">
+            <li class="table-cell">3</li>
+            <li class="table-cell">Kate</li>
+            <li class="table-cell">26</li>
+        </ul>
+    </div>
+</div>
+
+<!--float-->
+<div class="float-right">我将出现在屏幕右方</div>
+<!--clear-->
+<div class="clear-right">注意出现位置</div>
+<!--visible-->
+<div class="visibility-hidden">我不会出现</div>
+<!--clip-->
+<div class="be_clip">被裁切</div>
+<!--overflow-->
+<div class="overflow">
+    问君能有几多愁，恰似一江春水向东流
+    问君能有几多愁，恰似一江春水向东流
+    问君能有几多愁，恰似一江春水向东流
+    问君能有几多愁，恰似一江春水向东流
+    问君能有几多愁，恰似一江春水向东流
+    问君能有几多愁，恰似一江春水向东流
+    问君能有几多愁，恰似一江春水向东流
+    问君能有几多愁，恰似一江春水向东流
+    问君能有几多愁，恰似一江春水向东流
+    问君能有几多愁，恰似一江春水向东流
+    问君能有几多愁，恰似一江春水向东流
+    问君能有几多愁，恰似一江春水向东流
+</div>
+<!--overflow-x-->
+<div class="overflow-x">
+    炼精化气，炼气还神，炼神返虚，修罗场，长夜晨早……永和九年，岁在壬癸
+</div>
+<!--overflow-y-->
+<div class="overflow-y">
+    <ul>
+        <li>新闻列表</li>
+        <li>新闻列表</li>
+        <li>新闻列表</li>
+        <li>新闻列表</li>
+        <li>新闻列表</li>
+        <li>新闻列表</li>
+        <li>新闻列表</li>
+        <li>新闻列表</li>
+        <li>新闻列表</li>
+        <li>新闻列表</li>
+        <li>新闻列表</li>
+    </ul>
+</div>
+<!--width min-width max-width-->
+<div>
+    <div class="width">我的宽度为200</div>
+    <div class="width-min">我的最小宽度为200</div>
+    <div class="width-max">我的最大宽度为200</div>
+</div>
+<!--height min-height max-height-->
+<div>
+    <div class="height">我的高度为30</div>
+    <div class="height-min">我的最小高度为30</div>
+    <div class="height-max">我的最大高度为30</div>
+</div>
+<!--margin margin-top margin-right margin-bottom margin-left-->
+<div class="margin mar"></div>
+<div class="margin-top mar"></div>
+<!--padding padding-top padding-right padding-bottom padding-left-->
+<div class="padding pad">受命于天，既寿永昌</div>
+<div class="paddign-top pad">受命于天，既寿永昌</div>
+<!--border border-width border-style border-color-->
+<div class="border">border</div>
+<div class="border-width">border-width</div>
+<!--box-shadow-->
+<ul class="shadow">
+    <li class="outset">外阴影常规效果<br/>box-shadow:5px 5px rgba(0,0,0,.6);</li>
+    <li class="outset-blur">外阴影模糊效果<br/>box-shadow:5px 5px 5px rgba(0,0,0,.6);</li>
+    <li class="outset-extension">外阴影模糊外延效果<br/>box-shadow:5px 5px 5px 10px rgba(0,0,0,.6);</li>
+    <li class="inset">内阴影效果<br/>box-shadow:2px 2px 5px 1px rgba(0,0,0,.6)inset</li>
+    <li class="multiple-shadow">外阴影模糊效果<br/>box-shadow:5px 5px 5px rgba(0,0,0,.6);</li>
+</ul>
+<!--box-reflect-->
+<div class="reflect">你看到倒影了吗？</div>
 </body>
 </html>
